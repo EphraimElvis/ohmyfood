@@ -5,30 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ohmyfood</title>
-    <link rel="stylesheet" href="./dist/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/fontawesome.css" />
+    <link rel="stylesheet" href="/dist/css/regular.css" />
+    <link rel="stylesheet" href="/dist/css/brands.css" />
+    <link rel="stylesheet" href="/dist/css/solid.css" />
+    <link rel="stylesheet" href="/dist/css/v4-shims.css" />
     <link rel="stylesheet" href="./dist/css/style.css" />
   </head>
   <body>
-    <header>
-      <img class="logo" src="./assets/logo/ohmyfood.png" alt="ohmyfood" />
-      <h5 class="top-header-bar">Paris, Belleville</h5>
-      <h3 class="header-main-title">Book the menu you like</h3>
+    <header class="main-header">
+      <!-- <img class="logo" src="./assets/logo/ohmyfood.png" alt="ohmyfood" /> -->
+      <h1>ohmyfood</h1>
+      <div class="top-header-bar">
+        <i class="fa-solid fa-location-dot"></i>
+        <h5 class="">Paris, Belleville</h5>
+      </div>
+      <h2 class="header-main-title">Book the menu you like</h2>
       <p class="sub-header-title">
         Discover top-of-the-art restaurants we picked for you
       </p>
       <div class="call-to-action">Explore our restaurants</div>
     </header>
     <nav>
-      <div>
+      <div class="nav-header-title">
         <h3>How it works</h3>
       </div>
       <ul class="menu-buttons">
-        <li>Chose a restaurant</li>
-        <li>Create your menu</li>
-        <li>Go enjoy it at the restaurant</li>
+        <li>
+          <div class="menu-num-cirlcle">1</div>
+          <div class="menu-icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <div class="menu-label">
+            <h5>Chose a restaurant</h5>
+          </div>
+        </li>
+        <li>
+          <div class="menu-num-cirlcle">2</div>
+          <div class="menu-icon">
+            <i class="fa-solid fa-list"></i>
+          </div>
+          <div class="menu-label">
+            <h5>Create your menu</h5>
+          </div>
+        </li>
+        <li>
+          <div class="menu-num-cirlcle">3</div>
+          <div class="menu-icon">
+            <i class="fa-solid fa-store"></i>
+          </div>
+          <div class="menu-label">
+            <h5>Go enjoy it at the restaurant</h5>
+          </div>
+        </li>
       </ul>
     </nav>
-    <main>
+    <main class="main-content">
       <div class="main-content-title">
         <h3>Restaurants</h3>
       </div>
@@ -41,9 +79,10 @@
             />
             <div class="new">New</div>
             <div class="title-and-icon">
-              <h3>The Full Palette</h3>
+              <h5>The Full Palette</h5>
+              <i class="fa-regular fa-heart"></i>
             </div>
-            <h5>New York</h5>
+            <p>New York</p>
           </div>
         </div>
         <div class="column">
@@ -54,9 +93,10 @@
             />
             <div class="new">New</div>
             <div class="title-and-icon">
-              <h3>The Enchated Plate</h3>
+              <h5>The Enchated Plate</h5>
+              <i class="fa-regular fa-heart"></i>
             </div>
-            <h5>New York</h5>
+            <p class="new-menu">New York</p>
           </div>
         </div>
         <div class="column">
@@ -66,9 +106,10 @@
               alt="toa-heftiba-DQKerTsQwi0-unsplash"
             />
             <div class="title-and-icon">
-              <h3>Bastile</h3>
+              <h5>Bastile</h5>
+              <i class="fa-regular fa-heart"></i>
             </div>
-            <h5>New York</h5>
+            <p>New York</p>
           </div>
         </div>
         <div class="column">
@@ -77,23 +118,23 @@
               src="./assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
               alt="louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash"
             />
-            <div class="new">New</div>
             <div class="title-and-icon">
-              <h3>Le Gourmand</h3>
+              <h5>Le Gourmand</h5>
+              <i class="fa-regular fa-heart"></i>
             </div>
-            <h5>New York</h5>
+            <p>New York</h5>
           </div>
         </div>
       </div>
     </main>
     <footer>
-      <div class="footer-header-title">
-        <h3>ohmyfood</h3>
-      </div>
       <nav>
         <ul class="footer-nav-links">
-          <li>Suggest a restaurant</li>
-          <li>Become a partner</li>
+          <li> 
+            <h3>ohmyfood</h3>
+          </li>
+          <li><i class="fa-solid fa-utensils"></i>Suggest a restaurant</li>
+          <li><i class="fa-solid fa-handshake-simple"></i>Become a partner</li>
           <li>Legal</li>
           <li>Contact</li>
         </ul>
