@@ -5,11 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu - À la française</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/fontawesome.css" />
+    <link rel="stylesheet" href="/dist/css/regular.css" />
+    <link rel="stylesheet" href="/dist/css/brands.css" />
+    <link rel="stylesheet" href="/dist/css/solid.css" />
+    <link rel="stylesheet" href="/dist/css/v4-shims.css" />
+    <link rel="stylesheet" href="./dist/css/style.css" />
   </head>
   <body>
     <header>
       <div class="menu-logo">
-        <img src="./assets/logo/ohmyfood.png" alt="ohmyfood.png" />
+        <i class="fa-solid fa-arrow-left"></i>
+        <h1>ohmyfood</h1>
       </div>
       <div class="menu-barner">
         <img
@@ -18,132 +31,136 @@
         />
       </div>
     </header>
-    <main>
+    <main class="menu-container">
       <div class="menu-header-title">
         <h3>Bastile</h3>
+        <i class="fa-regular fa-heart"></i>
       </div>
       <section class="menu">
         <ul class="menu-list-container">
           <li class="menu-title">
             <h4>ENTREES</h4>
+            <hr />
           </li>
           <li class="menu-1">
-            <h4 class="menu-title">Citrus Squid Carpaccio</h4>
             <div class="menu-desc-container">
-              <p>With orange zest</p>
+              <h4 class="menu-title">Citrus Squid Carpaccio</h4>
               <div class="menu-desc-ingrendient">
-                25€
-                <div class="select-menu">
-                  <input type="checkbox" name="select-item" />
-                </div>
+                <p>With orange zest</p>
+                <div class="menu-prize">25€</div>
               </div>
             </div>
+            <label class="select-menu" for="check-menu-1">
+              <input type="checkbox" name="select-item" id="check-menu-1" />
+            </label>
           </li>
           <li class="menu-2">
-            <h4 class="menu-title">Grandmother's Vegetable Soup</h4>
             <div class="menu-desc-container">
-              <p>Carrots, parsnips, Jerusalem artichoke</p>
+              <h4 class="menu-title">Grandmother's Vegetable Soup</h4>
               <div class="menu-desc-ingrendient">
-                35€
-                <div class="select-menu">
-                  <input type="checkbox" name="select-item" />
-                </div>
+                <p>Carrots, parsnips, Jerusalem artichoke</p>
+                <div class="menu-prize">35€</div>
               </div>
             </div>
+            <label class="select-menu" for="check-menu-2">
+              <input type="checkbox" name="select-item" id="check-menu-2" />
+            </label>
           </li>
           <li class="menu-3">
-            <h4 class="menu-title">Onion Soup</h4>
             <div class="menu-desc-container">
-              <p>Revisited</p>
+              <h4 class="menu-title">Onion Soup</h4>
               <div class="menu-desc-ingrendient">
-                20€
-                <div class="select-menu">
-                  <input type="checkbox" name="select-item" />
-                </div>
+                <p>Revisited</p>
+                <div class="menu-prize">20€</div>
               </div>
             </div>
+            <label class="select-menu" for="check-menu-3">
+              <input type="checkbox" name="select-item" id="check-menu-3" />
+            </label>
           </li>
         </ul>
         <ul class="menu-list-container">
           <li class="menu-title">
             <h4>MAIN DISH</h4>
+            <hr />
           </li>
           <li class="menu-1">
-            <h4 class="menu-title">Scallops</h4>
             <div class="menu-desc-container">
-              <p>With mashed parsnip</p>
+              <h4 class="menu-title">Scallops</h4>
               <div class="menu-desc-ingrendient">
-                40€
-                <div class="select-menu">
-                  <input type="checkbox" name="select-item" />
-                </div>
+                <p>With mashed parsnip</p>
+                <div class="menu-prize">40€</div>
               </div>
             </div>
+            <label class="select-menu" for="check-menu-4">
+              <input type="checkbox" name="select-item" id="check-menu-4" />
+            </label>
           </li>
           <li class="menu-2">
-            <h4 class="menu-title">Magret de canard</h4>
             <div class="menu-desc-container">
-              <p>With mashed potatoes</p>
+              <h4 class="menu-title">Magret de canard</h4>
               <div class="menu-desc-ingrendient">
-                35€
-                <div class="select-menu">
-                  <input type="checkbox" name="select-item" />
-                </div>
+                <p>With mashed potatoes</p>
+                <div class="menu-prize">35€</div>
               </div>
             </div>
+            <label class="select-menu" for="check-menu-5">
+              <input type="checkbox" name="select-item" id="check-menu-5" />
+            </label>
           </li>
           <li class="menu-3">
-            <h4 class="menu-title">Game Hen</h4>
             <div class="menu-desc-container">
-              <p>With vegetable gnocchis</p>
+              <h4 class="menu-title">Game Hen</h4>
               <div class="menu-desc-ingrendient">
-                44€
-                <div class="select-menu">
-                  <input type="checkbox" name="select-item" />
-                </div>
+                <p>With vegetable gnocchis</p>
+                <div class="menu-prize">44€</div>
               </div>
             </div>
+            <label class="select-menu" for="check-menu-6">
+              <input type="checkbox" name="select-item" id="check-menu-6" />
+            </label>
           </li>
         </ul>
         <ul class="menu-list-container">
           <li class="menu-title">
             <h4>DESSERTS</h4>
+            <hr />
           </li>
           <li class="menu-1">
-            <h4 class="menu-title">Floral Ice Cream</h4>
             <div class="menu-desc-container">
-              <p>With hazelnut butter</p>
+              <h4 class="menu-title">Floral Ice Cream</h4>
               <div class="menu-desc-ingrendient">
-                18€
-                <div class="select-menu">
-                  <input type="checkbox" name="select-item" />
-                </div>
+                <p>With hazelnut butter</p>
+                <div class="menu-prize">18€</div>
               </div>
             </div>
+            <label class="select-menu" for="check-menu-7">
+              <input type="checkbox" name="select-item" id="check-menu-7" />
+            </label>
           </li>
           <li class="menu-2">
-            <h4 class="menu-title">Chocolate Lava Cake</h4>
             <div class="menu-desc-container">
-              <p>Revisited</p>
+              <h4 class="menu-title">Chocolate Lava Cake</h4>
               <div class="menu-desc-ingrendient">
-                22€
-                <div class="select-menu">
-                  <input type="checkbox" name="select-item" />
-                </div>
+                <p>Revisited</p>
+                <div class="menu-prize">22€</div>
               </div>
             </div>
+            <label class="select-menu" for="check-menu-8">
+              <input type="checkbox" name="select-item" id="check-menu-8" />
+            </label>
           </li>
           <li class="menu-3">
-            <h4 class="menu-title">Napolean</h4>
             <div class="menu-desc-container">
-              <p>With blueberries and marzipan</p>
+              <h4 class="menu-title">Napolean</h4>
               <div class="menu-desc-ingrendient">
-                23€
-                <div class="select-menu">
-                  <input type="checkbox" name="select-item" />
-                </div>
+                <p>With blueberries and marzipan</p>
+                <div class="menu-prize">23€</div>
               </div>
             </div>
+            <label class="select-menu" for="check-menu-9">
+              <input type="checkbox" name="select-item" id="check-menu-9" />
+            </label>
           </li>
         </ul>
       </section>
@@ -152,13 +169,13 @@
       </section>
     </main>
     <footer>
-      <div class="footer-header-title">
-        <h3>ohmyfood</h3>
-      </div>
       <nav>
         <ul class="footer-nav-links">
-          <li>Suggest a restaurant</li>
-          <li>Become a partner</li>
+          <li>
+            <h3>ohmyfood</h3>
+          </li>
+          <li><i class="fa-solid fa-utensils"></i>Suggest a restaurant</li>
+          <li><i class="fa-solid fa-handshake-simple"></i>Become a partner</li>
           <li>Legal</li>
           <li>Contact</li>
         </ul>
