@@ -155,11 +155,11 @@ ul.menu-buttons {
 .menu-icon {
     margin-left: 9px;
 }
-.menu-icon, .menu-div {
+.menu-icon, .menu-label {
     margin-right: 20px;
 }
 
-.menu-div h5 {
+.menu-label h5 {
     font-size: .9rem;
 }
 
@@ -370,21 +370,6 @@ hr {
 section.place-order {
     text-align: center;
     padding: 30px;
-}
-
-// input[type="checkbox"] {
-//     opacity: 0;
-// }
-
-.select-menu {
-    display: flex;
-}
-
-.select-menu::before {
-    content: '';
-    width: 18px;
-    border-radius: 50%;
-    background: #fff;
 }
 
 .place-order input {
