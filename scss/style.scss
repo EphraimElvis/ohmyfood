@@ -349,7 +349,7 @@ hr {
 .menu-desc-container {
     cursor: pointer;
     // flex: 1;
-    flex: 1 0 115%;
+    flex: 1 0 125%;
     transition-property: flex;
     transition-duration: .3s;
 }
@@ -386,7 +386,7 @@ section.place-order {
     background: #8ed9c8;
     width: 55px;
     cursor: pointer;
-    height: 56px;
+    height: 57px;
     margin: 0;
 }
 
@@ -474,7 +474,7 @@ section.place-order {
 .menu-content-descrition {
     display: flex;
     flex-direction: column;
-    flex: 1 0 87%;
+    flex: 1 0 80%;
 }
 
 .menu-desc-ingrendient {
