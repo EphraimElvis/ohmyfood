@@ -339,15 +339,19 @@ hr {
     overflow: hidden;
 }
 
-.menu-desc-container {
-    flex: 1;
-}
-
 .menu-desc-ingrendient {
     font-size: 0.8rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.menu-desc-container {
+    cursor: pointer;
+    // flex: 1;
+    flex: 1 0 115%;
+    transition-property: flex;
+    transition-duration: .3s;
 }
 
 .menu-title {
@@ -367,13 +371,23 @@ section.place-order {
     padding: 30px;
 }
 
+// .select-menu {
+//     display: flex;
+//     position: relative;
+//     background: #8ed9c8;
+//     padding: 28.02px 28px;
+//     margin-right: 0px;
+//     cursor: pointer;
+// }
+
 .select-menu {
     display: flex;
     position: relative;
     background: #8ed9c8;
-    padding: 29px 28px;
-    margin-right: 0px;
+    width: 55px;
     cursor: pointer;
+    height: 56px;
+    margin: 0;
 }
 
 .selected-menu {
@@ -393,10 +407,6 @@ section.place-order {
     height: 0;
     width: 0;
 }
-
-// .select-menu:hover input ~ .selected-menu {
-//     background-color: #ccc;
-// }
 
 .select-menu input:checked ~ .selected-menu {
     background-color: #fff;
@@ -422,7 +432,57 @@ section.place-order {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
+}
+
+// .select-menu {
+//     display: none;
+//     transition-property: display;
+//     transition-delay: 2s;
+//     animation-duration: 1s;
+//     animation-timing-function: linear;  
+//     animation-direction: normal;  
+// }
+
+// .menu-desc-container:hover + .select-menu { 
+//     display: block;
+//     margin: 0px;
+// }
+
+// .select-menu:hover {
+//     display: block;
+// }
+
+.menu-desc-container {
+    transition-property: flex-basis;
+    transition-duration: .3s;
+}
+
+.menu-desc-container:hover { 
+    flex-basis: 70%;
+}
+
+.menu-prize {
+    margin-right: 20px;
+}
+
+.menu-content {
+    display: flex;
+    flex: 1 0 100%;
+    justify-content: space-between;
+}
+
+.menu-content-descrition {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 87%;
+}
+
+.menu-desc-ingrendient {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .place-order input {
     padding: 10px 50px;
