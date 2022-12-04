@@ -406,35 +406,28 @@ section.place-order {
   transform: rotate(45deg);
 }
 
-.menu-desc-container {
-  transition-property: flex-basis;
-  transition-duration: 0.3s;
-}
-
-.menu-desc-container:hover {
-  flex-basis: 70%;
-}
-
-.menu-prize {
-  margin-right: 20px;
-}
-
 .menu-content {
   display: flex;
-  flex: 1 0 100%;
+  width: 100%;
   justify-content: space-between;
 }
 
 .menu-content-descrition {
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 80%;
+  flex: 1 1 80%;
 }
 
 .menu-desc-ingrendient {
   font-size: 0.8rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-desc-container:hover {
+  flex: 1 0 100%;
+}
+.menu-desc-container:hover .menu-content-descrition {
+  flex-basis: 90%;
   justify-content: space-between;
 }
 
