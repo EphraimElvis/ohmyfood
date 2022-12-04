@@ -413,7 +413,7 @@ section.place-order {
 }
 
 .menu-content-descrition {
-  flex: 1 1 80%;
+  flex-basis: 79%;
 }
 
 .menu-desc-ingrendient {

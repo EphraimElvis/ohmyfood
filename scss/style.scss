@@ -443,7 +443,8 @@ section.place-order {
 .menu-content-descrition {
     // display: flex;
     // flex-direction: column;
-    flex:1 1 80%;
+    //  flex:1 0 80%;
+    flex-basis: 79%;
 }
 
 .menu-desc-ingrendient {
@@ -460,6 +461,7 @@ section.place-order {
         flex-basis:90%;
         justify-content: space-between;
     }
+    
 }
 
 .place-order input {
