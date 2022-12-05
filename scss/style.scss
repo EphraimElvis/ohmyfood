@@ -349,9 +349,7 @@ hr {
 .menu-desc-container {
     cursor: pointer;
     // flex: 1;
-    flex: 1 0 125%;
-    transition-property: flex;
-    transition-duration: .3s;
+    flex: 1 0 100%;
 }
 
 .menu-title {
@@ -371,15 +369,6 @@ section.place-order {
     padding: 30px;
 }
 
-// .select-menu {
-//     display: flex;
-//     position: relative;
-//     background: #8ed9c8;
-//     padding: 28.02px 28px;
-//     margin-right: 0px;
-//     cursor: pointer;
-// }
-
 .select-menu {
     display: flex;
     position: relative;
@@ -388,6 +377,7 @@ section.place-order {
     cursor: pointer;
     height: 57px;
     margin: 0;
+    left: 35px;
 }
 
 .selected-menu {
@@ -398,6 +388,8 @@ section.place-order {
     border-radius: 50%;
     top: 28%;
     left: 28%;
+    transition-property: left;
+    transition-duration: .3s;
 }
 
 .select-menu input {
@@ -436,15 +428,14 @@ section.place-order {
 
 .menu-content {
     display: flex;
-    width: 100%;
+    width: 109%;
     justify-content: space-between;
+    transition-property: width;
+    transition-duration: .3s;
 }
 
 .menu-content-descrition {
-    // display: flex;
-    // flex-direction: column;
-    //  flex:1 0 80%;
-    flex-basis: 79%;
+    flex-basis: 100%;
 }
 
 .menu-desc-ingrendient {
@@ -455,13 +446,12 @@ section.place-order {
 }
 
 .menu-desc-container:hover { 
-    // flex-basis: 100%;
-    flex: 1 0 100%;
-    .menu-content-descrition {
-        flex-basis:90%;
-        justify-content: space-between;
+    .menu-content {
+        width: 100%;
+        .select-menu {
+            left: 0;
+        }
     }
-    
 }
 
 .place-order input {

@@ -332,9 +332,7 @@ hr {
 
 .menu-desc-container {
   cursor: pointer;
-  flex: 1 0 125%;
-  transition-property: flex;
-  transition-duration: 0.3s;
+  flex: 1 0 100%;
 }
 
 .menu-title {
@@ -362,6 +360,7 @@ section.place-order {
   cursor: pointer;
   height: 57px;
   margin: 0;
+  left: 35px;
 }
 
 .selected-menu {
@@ -372,6 +371,8 @@ section.place-order {
   border-radius: 50%;
   top: 28%;
   left: 28%;
+  transition-property: left;
+  transition-duration: 0.3s;
 }
 
 .select-menu input {
@@ -408,12 +409,14 @@ section.place-order {
 
 .menu-content {
   display: flex;
-  width: 100%;
+  width: 109%;
   justify-content: space-between;
+  transition-property: width;
+  transition-duration: 0.3s;
 }
 
 .menu-content-descrition {
-  flex-basis: 79%;
+  flex-basis: 100%;
 }
 
 .menu-desc-ingrendient {
@@ -423,12 +426,11 @@ section.place-order {
   justify-content: space-between;
 }
 
-.menu-desc-container:hover {
-  flex: 1 0 100%;
+.menu-desc-container:hover .menu-content {
+  width: 100%;
 }
-.menu-desc-container:hover .menu-content-descrition {
-  flex-basis: 90%;
-  justify-content: space-between;
+.menu-desc-container:hover .menu-content .select-menu {
+  left: 0;
 }
 
 .place-order input {
