@@ -426,6 +426,65 @@ section.place-order {
   justify-content: space-between;
 }
 
+@-webkit-keyframes slideUp {
+  from {
+    transform: translateY(10%);
+    opacity: 0.9;
+    -webkit-animation: linear;
+            animation: linear;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+    -webkit-animation: linear;
+            animation: linear;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10%);
+    opacity: 0.9;
+    -webkit-animation: linear;
+            animation: linear;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+    -webkit-animation: linear;
+            animation: linear;
+  }
+}
+.menu {
+  -webkit-animation: 4s ease-in 0s 1 slideUp;
+          animation: 4s ease-in 0s 1 slideUp;
+}
+
+.menu ul li:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.menu ul li:nth-child(3) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.menu ul li:nth-child(4) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.menu ul li:nth-child(5) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.menu ul li:nth-child(6) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
 .menu-desc-container:hover .menu-content {
   width: 100%;
 }
