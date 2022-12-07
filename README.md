@@ -1,5 +1,7 @@
-##ohmyfood is school projec that focuses on
+## ohmyfood is school project that focuses on
 
-#list of menus
-#classic reservation system
-#select the dishes
+# building a web page with list of menus
+
+# add classic reservation system fot the web page
+
+# users should be able select the available dishes from the website
