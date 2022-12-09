@@ -460,6 +460,12 @@ section.place-order {
     }
 }
 
+ul.menu-buttons li:hover {
+    background: #9356dc33;
+    cursor: pointer;
+}
+
+
 @keyframes slideUp {
     from {
         transform:translateY(10%);

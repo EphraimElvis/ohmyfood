@@ -433,6 +433,11 @@ section.place-order {
   left: 0;
 }
 
+ul.menu-buttons li:hover {
+  background: rgba(147, 86, 220, 0.2);
+  cursor: pointer;
+}
+
 @-webkit-keyframes slideUp {
   from {
     transform: translateY(10%);
