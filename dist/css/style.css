@@ -407,16 +407,16 @@ section.place-order {
   transform: rotate(45deg);
 }
 
+.menu-content-descrition {
+  flex-basis: 100%;
+}
+
 .menu-content {
   display: flex;
   width: 109%;
   justify-content: space-between;
   transition-property: width;
   transition-duration: 0.3s;
-}
-
-.menu-content-descrition {
-  flex-basis: 100%;
 }
 
 .menu-desc-ingrendient {
@@ -426,10 +426,17 @@ section.place-order {
   justify-content: space-between;
 }
 
+.menu-desc-container:hover .menu-content {
+  width: 100%;
+}
+.menu-desc-container:hover .menu-content .select-menu {
+  left: 0;
+}
+
 @-webkit-keyframes slideUp {
   from {
     transform: translateY(10%);
-    opacity: 0.9;
+    opacity: 0.1;
     -webkit-animation: linear;
             animation: linear;
   }
@@ -444,7 +451,7 @@ section.place-order {
 @keyframes slideUp {
   from {
     transform: translateY(10%);
-    opacity: 0.9;
+    opacity: 0.1;
     -webkit-animation: linear;
             animation: linear;
   }
@@ -455,41 +462,24 @@ section.place-order {
             animation: linear;
   }
 }
-.menu {
-  -webkit-animation: 4s ease-in 0s 1 slideUp;
-          animation: 4s ease-in 0s 1 slideUp;
+.menu ul li {
+  -webkit-animation: 1.5s ease-in 0s 1 slideUp;
+          animation: 1.5s ease-in 0s 1 slideUp;
 }
 
 .menu ul li:nth-child(2) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .menu ul li:nth-child(3) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
 .menu ul li:nth-child(4) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.menu ul li:nth-child(5) {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
-.menu ul li:nth-child(6) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-.menu-desc-container:hover .menu-content {
-  width: 100%;
-}
-.menu-desc-container:hover .menu-content .select-menu {
-  left: 0;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
 .place-order input {
