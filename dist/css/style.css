@@ -85,6 +85,7 @@ img {
   letter-spacing: 0.5px;
   box-shadow: 1px 3px 7px 1px #9a8ea8;
   transition: background-image, padding, box-shadow 0.5s ease-out;
+  cursor: pointer;
 }
 
 .call-to-action:hover {
@@ -148,6 +149,7 @@ ul.menu-buttons {
   background-color: rgba(230, 228, 234, 0.4);
   border: none;
   box-shadow: 0px 5px 8px 2px rgba(97, 96, 99, 0.32);
+  transition: background-color 0.5s ease-out 0.3s;
 }
 
 .menu-num-cirlcle {
@@ -201,6 +203,19 @@ ul.menu-buttons {
 
 .title-and-icon h5 {
   margin: 0;
+}
+
+.far, .fa-regular {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+.title-and-icon i:hover.fa-regular {
+  font-weight: 900;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease-out 0.1s;
 }
 
 .content p {
@@ -490,8 +505,8 @@ ul.menu-buttons li:hover {
   }
 }
 .menu ul li {
-  -webkit-animation: 1.5s ease-in 0s 1 slideUp;
-          animation: 1.5s ease-in 0s 1 slideUp;
+  -webkit-animation: 2s ease-out 0s 1 slideUp;
+          animation: 2s ease-out 0s 1 slideUp;
 }
 
 .menu ul li:nth-child(2) {
@@ -507,6 +522,11 @@ ul.menu-buttons li:hover {
 .menu ul li:nth-child(4) {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
+}
+
+.menu ul li:nth-child(5) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .place-order input {
