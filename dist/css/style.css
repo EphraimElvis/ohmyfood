@@ -28,6 +28,10 @@ body {
   box-shadow: 0px 1px 5px 1px rgba(101, 97, 105, 0.1803921569);
 }
 
+.column a {
+  text-decoration: none;
+}
+
 img {
   width: 100%;
   -o-object-fit: cover;
