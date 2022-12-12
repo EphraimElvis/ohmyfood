@@ -32,16 +32,31 @@ body {
 .column {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    // overflow: hidden;
     background-color: #fff;
     border-radius: 15px;
     margin-bottom: 20px;
     position: relative;
     box-shadow: 0px 1px 5px 1px #6561692e;
+    
+}
+
+.column img {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 }
 
 .column a {
     text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    transition: box-shadow, border-radius .5s ease-out;
+}
+
+.column a:hover {
+   
+    box-shadow: 0px 1px 6px 2px rgba(101, 97, 105, 0.1803921569);
+    
 }
 
 img {
