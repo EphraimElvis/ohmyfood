@@ -541,4 +541,9 @@ ul.menu-buttons li:hover {
   border: 0;
   box-shadow: 0px 0px 4px 1px darkgrey;
   cursor: pointer;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
