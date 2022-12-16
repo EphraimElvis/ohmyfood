@@ -637,15 +637,31 @@ nav ul li a {
     visibility: hidden;
   }
 }
+@media screen and (min-width: 320px) {
+  .menu-desc-container .menu-content {
+    width: 114%;
+  }
+}
 @media only screen and (min-width: 768px) {
+  .menu-header-title {
+    width: 80%;
+    margin: 0 auto;
+  }
+  section.menu {
+    margin: 0 auto;
+    width: 80%;
+  }
   .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
   }
+  .menu-desc-container .menu-content {
+    width: 106%;
+  }
   .column {
-    flex: 1 0 32%;
+    flex: 1 0 33%;
     margin-bottom: 0;
   }
 }
@@ -657,10 +673,13 @@ nav ul li a {
   ul.menu-buttons {
     padding: 0px 0px 0px 0px;
   }
-  .main-content {
+  main.main-content {
     width: 80%;
     margin: 0 auto;
     background: #fff;
+  }
+  .menu-desc-container .menu-content {
+    width: 104%;
   }
   .row {
     display: flex;

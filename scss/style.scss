@@ -509,9 +509,11 @@ section.place-order {
     }
 }
 
-ul.menu-buttons li:hover {
-    background: #9356dc33;
-    cursor: pointer;
+ul.menu-buttons {
+    li:hover {
+        background: #9356dc33;
+        cursor: pointer;
+    }
 }
 
 
@@ -538,7 +540,6 @@ ul.menu-buttons li:hover {
 .menu ul li:nth-child(3) { animation-delay: .7s }
 .menu ul li:nth-child(4) { animation-delay: .9s }
 .menu ul li:nth-child(5) { animation-delay: 1s }
-// .menu ul li:nth-child(6) { animation-delay: .6s }
 
 .place-order input {
     padding: 10px 50px;
@@ -622,8 +623,26 @@ nav ul li a {
     }
 }
 
-@media only screen and (min-width: 768px)  {
+@media screen and (min-width: 320px) {
+    .menu-desc-container {
+        .menu-content {
+            width: 114%;
+        }
+    }
     
+}
+
+@media only screen and (min-width: 768px)  {
+
+    .menu-header-title {
+        width: 80%;
+        margin: 0 auto;
+    }
+    section.menu {
+        margin: 0 auto;
+        width: 80%;
+    }
+
     .row {
         display: flex;
         flex-direction: row;
@@ -632,16 +651,19 @@ nav ul li a {
         
     }
 
+    .menu-desc-container {
+       .menu-content {
+            width: 106%;
+        } 
+    } 
+
     .column {
-        flex: 1 0 32%;
+        flex: 1 0 33%;
         margin-bottom: 0;
     }
 }
 
 @media only screen and (min-width: 1024px) {
-    // body {
-    //     background-color: yellow;
-    // }
 
     .main-content-title {
         padding-top: 25px;
@@ -652,11 +674,21 @@ nav ul li a {
         padding: 0px 0px 0px 0px;
     }
 
-    .main-content {
+    
+    main.main-content {
         width: 80%;
         margin: 0 auto;
         background: #fff;
     }
+    
+    
+
+    .menu-desc-container {
+        .menu-content {
+            width: 104%;
+        }
+    }
+
 
     .row {
         display: flex;
