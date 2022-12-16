@@ -227,6 +227,7 @@ ul.menu-buttons {
     &.fa-regular {
         font-weight: 900;
         background: -webkit-linear-gradient( $primary-color, $secondary-color);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: all .5s ease-out .1s;
@@ -552,4 +553,71 @@ ul.menu-buttons li:hover {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+@keyframes load {
+    from {
+       transform: rotate(0turn);
+    }
+    
+    to { 
+        transform: rotate(1turn); 
+        visibility: visible;
+    }
+}
+
+.loader {
+    width: 150px;
+    aspect-ratio: 1;
+    display: grid;
+    -webkit-mask: conic-gradient(from 22deg, #0003,#000);
+    mask: conic-gradient(from 22deg, #0003,#000);
+    animation: load 3s steps(12);
+    visibility: hidden;
+}
+.loader, 
+.loader:before,
+.loader:after {
+    --_g: linear-gradient(#9356DC 0 0) 50%;
+    background: var(--_g) / 34% 5% space no-repeat,
+    var(--_g) / 5% 34% no-repeat space;
+}
+.loader:before,
+.loader:after {
+    content: "";
+    grid-area: 1 / 1;
+    transform: rotate(30deg);
+}
+.loader:after {
+    transform: rotate(60deg);
+}
+
+.page-loader {
+    left: 0;
+    right: 0;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    background: #0f0b12;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    visibility: hidden;
+    animation: hideMe;
+    animation-duration: 4s;
+}
+
+@keyframes hideMe {
+    from {
+        opacity: 1;
+       
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+       
+        visibility: hidden;
+    }
 }
