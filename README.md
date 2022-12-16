@@ -1,7 +1,9 @@
-## ohmyfood is school project that focuses on
+## ohmyfood is a school project that enable
 
-- building a web page with list of menus
+- online food ordering from the company.
 
-- add classic reservation system fot the web page
+- the site is able to allow allows users online to list their own menus
 
-- users should be able select the available dishes from the website
+- reduce waiting time in restaurants because they make their choice in advance
+
+- It target's the Middle and Upper class people who are connected and often in a hurry, wishing to taste quality products
