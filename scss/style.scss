@@ -621,3 +621,55 @@ nav ul li a {
         visibility: hidden;
     }
 }
+
+@media only screen and (min-width: 768px)  {
+    
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        
+    }
+
+    .column {
+        flex: 1 0 32%;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    // body {
+    //     background-color: yellow;
+    // }
+
+    .main-content-title {
+        padding-top: 25px;
+        margin: 0;
+    }
+
+    ul.menu-buttons {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .main-content {
+        width: 80%;
+        margin: 0 auto;
+        background: #fff;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .column {
+        flex: 1;
+    }
+
+    ul.footer-nav-links {
+        width: 80%;
+    }
+}
