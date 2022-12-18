@@ -10530,7 +10530,7 @@ img {
 
 .call-to-action:hover {
   background-image: linear-gradient(hwb(317deg 47% 0%/80%), hwb(267deg 34% 14%/80%));
-  padding: 17px 33px;
+  padding: 17px 41px;
   box-shadow: 1px 3px 4px 2px #9a8ea8;
 }
 
