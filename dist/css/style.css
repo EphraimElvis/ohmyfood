@@ -199,6 +199,7 @@ ul.menu-buttons {
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px 3px;
+  cursor: pointer;
 }
 
 .title-and-icon h5 {
