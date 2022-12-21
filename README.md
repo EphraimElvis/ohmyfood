@@ -7,3 +7,7 @@
 - reduce waiting time in restaurants because they make their choice in advance
 
 - It target's the Middle and Upper class people who are connected and often in a hurry, wishing to taste quality products
+
+[ ohmyfood url][def]
+
+[def]: https://ephraimelvis.github.io/ohmyfood/

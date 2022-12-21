@@ -1,28 +1,10 @@
-@import "./fontawesome/scss/fontawesome.scss";
-@import "./fontawesome/scss/variables";
+// @import "./fontawesome/scss/fontawesome.scss";
+// @import "./fontawesome/scss/variables";
 
-@import "./fontawesome/scss/solid.scss";
-@import "./fontawesome/scss/regular.scss";
-@import "./fontawesome/scss/brands.scss";
+// @import "./fontawesome/scss/solid.scss";
+// @import "./fontawesome/scss/regular.scss";
+// @import "./fontawesome/scss/brands.scss";
 
-@font-face {
-    font-family: "FontAwesome";
-    // src: url("fonts/fontawesome-webfont.eot");
-    // src: url("fonts/fontawesome-webfont.eot") format("embedded-opentype"),
-    // url("fonts/fontawesome-webfont.woff") format("woff"),
-    // url("fonts/fontawesome-webfont.ttf") format("truetype"),
-    // url("fonts/fontawesome-webfont.svg") format("svg");
-    // font-weight: normal;
-    // font-style: normal;
-    src: url("/webfonts/fa-brands-400.ttf") format("truetype");
-    src: url("/webfonts/fa-brands-400.woff2") format("woff2");
-    src: url("/webfonts/fa-regular-400.ttf") format("truetype");
-    src: url("/webfonts/fa-regular-400.woff2") format("woff2");
-    src: url("/webfonts/fa-solid-900.ttf") format("truetype");
-    src: url("/webfonts/fa-solid-900.woff2")format("woff2");
-    src: url("/webfonts/fa-v4compatibility.ttf") format("truetype");
-    src: url("/webfonts/fa-v4compatibility.woff2")format("woff2");
-}
 
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
@@ -625,7 +607,7 @@ nav ul li a {
     position: fixed;
     bottom: 0;
     top: 0;
-    background: #0f0b12;
+    background: #fff;
     z-index: 100000;
     display: flex;
     align-items: center;
@@ -638,12 +620,12 @@ nav ul li a {
 
 @keyframes hideMe {
     from {
-        opacity: 1;
+        // opacity: 1;
        
         visibility: visible;
     }
     to {
-        opacity: 0;
+        // opacity: 0;
        
         visibility: hidden;
     }
