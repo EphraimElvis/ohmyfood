@@ -1,4 +1,4 @@
-## ohmyfood is a school project that enable
+## ohmyfood is a school project that enables
 
 - online food ordering from the company.
 
