@@ -612,8 +612,8 @@ nav ul li a {
   visibility: hidden;
   -webkit-animation: hideMe;
           animation: hideMe;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
 }
 
 @-webkit-keyframes hideMe {
@@ -639,6 +639,13 @@ nav ul li a {
   }
 }
 @media only screen and (min-width: 768px) {
+  .menu-logo {
+    width: 76%;
+    margin: 0 auto;
+  }
+  .menu-logo h1 {
+    margin: 0 auto;
+  }
   .menu-header-title {
     width: 80%;
     margin: 0 auto;
@@ -662,6 +669,13 @@ nav ul li a {
   }
 }
 @media only screen and (min-width: 1024px) {
+  .menu-logo {
+    width: 78%;
+    margin: 0 auto;
+  }
+  .menu-logo h1 {
+    margin: 0 auto;
+  }
   .main-content-title {
     padding-top: 25px;
     margin: 0;

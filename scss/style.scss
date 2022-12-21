@@ -607,18 +607,14 @@ nav ul li a {
     justify-content: center;
     visibility: hidden;
     animation: hideMe;
-    animation-duration: 4s;
+    animation-duration: 3.5s;
 }
 
 @keyframes hideMe {
     from {
-        // opacity: 1;
-       
         visibility: visible;
     }
     to {
-        // opacity: 0;
-       
         visibility: hidden;
     }
 }
@@ -633,6 +629,14 @@ nav ul li a {
 }
 
 @media only screen and (min-width: 768px)  {
+
+    .menu-logo {
+        width: 76%;
+        margin: 0 auto;
+        h1 {
+            margin: 0 auto;
+        }
+    }
 
     .menu-header-title {
         width: 80%;
@@ -664,6 +668,14 @@ nav ul li a {
 }
 
 @media only screen and (min-width: 1024px) {
+
+    .menu-logo {
+        width: 78%;
+        margin: 0 auto;
+        h1 {
+            margin: 0 auto;
+        }
+    }
 
     .main-content-title {
         padding-top: 25px;
