@@ -489,15 +489,6 @@ section.place-order {
     justify-content: space-between;
 }
 
-// .menu-list-container {
-//     transform: translateY(20%);
-//     transition-duration: 4s;
-// }
-
-// .menu-list-container {
-//     transform:translateY(1%) ;
-// }
-
 .menu-desc-container:hover { 
     .menu-content {
         width: 100%;
@@ -532,8 +523,6 @@ ul.menu-buttons {
 }
 
 .menu ul li {
-    // animation-name: slideUp;
-    // animation-duration: 4s;
     animation:  2s ease-out 0s 1 slideUp;
 }
 
@@ -623,7 +612,7 @@ nav ul li a {
 @media screen and (min-width: 320px) {
     .menu-desc-container {
         .menu-content {
-            width: 114%;
+            width: 110%;
         }
     }
     
@@ -643,6 +632,7 @@ nav ul li a {
         width: 80%;
         margin: 0 auto;
     }
+
     section.menu {
         margin: 0 auto;
         width: 80%;
