@@ -681,6 +681,13 @@ nav ul li a {
     padding-top: 25px;
     margin: 0;
   }
+  .menu {
+    display: flex;
+    gap: 15px;
+  }
+  .menu .menu-list-container {
+    flex: 1;
+  }
   ul.menu-buttons {
     padding: 0px 0px 0px 0px;
   }
