@@ -708,6 +708,10 @@ nav ul li a {
   .column {
     flex: 1;
   }
+  section.place-order {
+    text-align: center;
+    padding: 15px;
+  }
   ul.footer-nav-links {
     width: 80%;
   }
