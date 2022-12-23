@@ -10,10 +10,17 @@ $break-s: 576px;
 $break-m: 768px;
 $breal-l: 992px;
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: $page-font-family;
     font-size: 1rem;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 .row {
@@ -254,6 +261,7 @@ footer {
     /* font-weight: 900; */
     word-spacing: 1px;
     letter-spacing: .2px;
+    margin-top: auto;
 }
 
 ul.footer-nav-links {
