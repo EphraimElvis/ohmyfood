@@ -21,13 +21,16 @@
     <link href="/dist/css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div class="menu-logo">
-        <a href="index.html">
-          <i class="fa-solid fa-arrow-left"></i>
-        </a>
-        <h1>ohmyfood</h1>
+    <header class="header">
+      <div class="container">
+        <div class="menu-logo">
+          <a href="index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <h1>ohmyfood</h1>
+        </div>
       </div>
+
       <div class="menu-barner">
         <img
           src="./assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
@@ -35,199 +38,185 @@
         />
       </div>
     </header>
-    <main class="menu-container">
-      <div class="menu-header-title title-and-icon">
-        <h3>Bastile</h3>
-        <i class="fa-regular fa-heart"></i>
+    <main class="bg-color main-page">
+      <div class="container">
+        <div class="page-card">
+          <div class="main-menu-title">
+            <h1>Bastille</h1>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <section class="menu row">
+            <div class="column">
+              <ul class="menu-list-container menu-card">
+                <li class="">
+                  <h4>ENTREES</h4>
+                  <hr />
+                </li>
+                <li class="menu-card__item">
+                  <div class="menu-card__item-container">
+                    <div class="menu-card__item-container-desc">
+                      <h4>Citrus Squid Carpaccio</h4>
+                      <p>With orande zest</p>
+                      <div class="menu-price">25€</div>
+                    </div>
+                    <label class="menu-card__item-container-select">
+                      <input type="checkbox" />
+                      <span class="selected-menu"></span>
+                    </label>
+                  </div>
+                </li>
+                <li class="menu-card__item">
+                  <div class="menu-card__item-container">
+                    <div class="menu-card__item-container-desc">
+                      <h4>Grandmother's vegetable soup</h4>
+                      <p>Carrots, parsnips, Jerusalem artichoke</p>
+                      <div class="menu-price">35€</div>
+                    </div>
+                    <label class="menu-card__item-container-select">
+                      <input type="checkbox" />
+                      <span class="selected-menu"></span>
+                    </label>
+                  </div>
+                </li>
+                <li class="menu-card__item">
+                  <div class="menu-card__item-container">
+                    <div class="menu-card__item-container-desc">
+                      <h4>Onion Soup</h4>
+                      <p>Revisted</p>
+                      <div class="menu-price">20€</div>
+                    </div>
+                    <label class="menu-card__item-container-select">
+                      <input type="checkbox" />
+                      <span class="selected-menu"></span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul class="menu-list-container menu-card">
+                <li class="">
+                  <h4>MAIN DISH</h4>
+                  <hr />
+                </li>
+                <li class="menu-card__item">
+                  <div class="menu-card__item-container">
+                    <div class="menu-card__item-container-desc">
+                      <h4>Scallops</h4>
+                      <p>With mashed parsnip</p>
+                      <div class="menu-price">40€</div>
+                    </div>
+                    <label class="menu-card__item-container-select">
+                      <input type="checkbox" />
+                      <span class="selected-menu"></span>
+                    </label>
+                  </div>
+                </li>
+                <li class="menu-card__item">
+                  <div class="menu-card__item-container">
+                    <div class="menu-card__item-container-desc">
+                      <h4>Magret de canard</h4>
+                      <p>With mashed potatoes</p>
+                      <div class="menu-price">35€</div>
+                    </div>
+                    <label class="menu-card__item-container-select">
+                      <input type="checkbox" />
+                      <span class="selected-menu"></span>
+                    </label>
+                  </div>
+                </li>
+                <li class="menu-card__item">
+                  <div class="menu-card__item-container">
+                    <div class="menu-card__item-container-desc">
+                      <h4>Game Hen</h4>
+                      <p>With vegetable gnocchis</p>
+                      <div class="menu-price">44€</div>
+                    </div>
+                    <label class="menu-card__item-container-select">
+                      <input type="checkbox" />
+                      <span class="selected-menu"></span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul class="menu-list-container menu-card">
+                <li class="">
+                  <h4>DESSERTS</h4>
+                  <hr />
+                </li>
+                <li class="menu-card__item">
+                  <div class="menu-card__item-container">
+                    <div class="menu-card__item-container-desc">
+                      <h4>Floral Ice Cream</h4>
+                      <p>With hazelnut butter</p>
+                      <div class="menu-price">18€</div>
+                    </div>
+                    <label class="menu-card__item-container-select">
+                      <input type="checkbox" />
+                      <span class="selected-menu"></span>
+                    </label>
+                  </div>
+                </li>
+                <li class="menu-card__item">
+                  <div class="menu-card__item-container">
+                    <div class="menu-card__item-container-desc">
+                      <h4>Chocolate Lake Cake</h4>
+                      <p>Revisted</p>
+                      <div class="menu-price">22€</div>
+                    </div>
+                    <label class="menu-card__item-container-select">
+                      <input type="checkbox" />
+                      <span class="selected-menu"></span>
+                    </label>
+                  </div>
+                </li>
+                <li class="menu-card__item">
+                  <div class="menu-card__item-container">
+                    <div class="menu-card__item-container-desc">
+                      <h4>Napolean</h4>
+                      <p>With blueberries and marzipan</p>
+                      <div class="menu-price">23€</div>
+                    </div>
+                    <label class="menu-card__item-container-select">
+                      <input type="checkbox" />
+                      <span class="selected-menu"></span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="place-order">
+            <input type="button" value="Order" class="button button--primary" />
+          </section>
+        </div>
       </div>
-      <section class="menu">
-        <ul class="menu-list-container">
-          <li class="menu-title">
-            <h4>ENTREES</h4>
-            <hr />
-          </li>
-          <li class="menu-1">
-            <div class="menu-desc-container">
-              <div class="menu-content">
-                <div class="menu-content-descrition">
-                  <h4 class="menu-title">Citrus Squid Carpaccio</h4>
-                  <div class="menu-desc-ingrendient">
-                    <p>With orange zest</p>
-                    <div class="menu-prize">25€</div>
-                  </div>
-                </div>
-                <label class="select-menu">
-                  <input type="checkbox" />
-                  <span class="selected-menu"></span>
-                </label>
-              </div>
-            </div>
-          </li>
-          <li class="menu-2">
-            <div class="menu-desc-container">
-              <div class="menu-content">
-                <div class="menu-content-descrition">
-                  <h4 class="menu-title">Grandmother's Vegetable Soup</h4>
-                  <div class="menu-desc-ingrendient">
-                    <p>Carrots, parsnips, Jerusalem artichoke</p>
-                    <div class="menu-prize">35€</div>
-                  </div>
-                </div>
-                <label class="select-menu">
-                  <input type="checkbox" />
-                  <span class="selected-menu"></span>
-                </label>
-              </div>
-            </div>
-          </li>
-          <li class="menu-3">
-            <div class="menu-desc-container">
-              <div class="menu-content">
-                <div class="menu-content-descrition">
-                  <h4 class="menu-title">Onion Soup</h4>
-                  <div class="menu-desc-ingrendient">
-                    <p>Revisited</p>
-                    <div class="menu-prize">20€</div>
-                  </div>
-                </div>
-                <label class="select-menu">
-                  <input type="checkbox" />
-                  <span class="selected-menu"></span>
-                </label>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <ul class="menu-list-container">
-          <li class="menu-title">
-            <h4>MAIN DISH</h4>
-            <hr />
-          </li>
-          <li class="menu-1">
-            <div class="menu-desc-container">
-              <div class="menu-content">
-                <div class="menu-content-descrition">
-                  <h4 class="menu-title">Scallops</h4>
-                  <div class="menu-desc-ingrendient">
-                    <p>With mashed parsnip</p>
-                    <div class="menu-prize">40€</div>
-                  </div>
-                </div>
-                <label class="select-menu">
-                  <input type="checkbox" />
-                  <span class="selected-menu"></span>
-                </label>
-              </div>
-            </div>
-          </li>
-          <li class="menu-2">
-            <div class="menu-desc-container">
-              <div class="menu-content">
-                <div class="menu-content-descrition">
-                  <h4 class="menu-title">Magret de canard</h4>
-                  <div class="menu-desc-ingrendient">
-                    <p>With mashed potatoes</p>
-                    <div class="menu-prize">35€</div>
-                  </div>
-                </div>
-                <label class="select-menu">
-                  <input type="checkbox" />
-                  <span class="selected-menu"></span>
-                </label>
-              </div>
-            </div>
-          </li>
-          <li class="menu-3">
-            <div class="menu-desc-container">
-              <div class="menu-content">
-                <div class="menu-content-descrition">
-                  <h4 class="menu-title">Game Hen</h4>
-                  <div class="menu-desc-ingrendient">
-                    <p>With vegetable gnocchis</p>
-                    <div class="menu-prize">44€</div>
-                  </div>
-                </div>
-                <label class="select-menu">
-                  <input type="checkbox" />
-                  <span class="selected-menu"></span>
-                </label>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <ul class="menu-list-container">
-          <li class="menu-title">
-            <h4>DESSERTS</h4>
-            <hr />
-          </li>
-          <li class="menu-1">
-            <div class="menu-desc-container">
-              <div class="menu-content">
-                <div class="menu-content-descrition">
-                  <h4 class="menu-title">Floral Ice Cream</h4>
-                  <div class="menu-desc-ingrendient">
-                    <p>With hazelnut butter</p>
-                    <div class="menu-prize">18€</div>
-                  </div>
-                </div>
-                <label class="select-menu">
-                  <input type="checkbox" />
-                  <span class="selected-menu"></span>
-                </label>
-              </div>
-            </div>
-          </li>
-          <li class="menu-2">
-            <div class="menu-desc-container">
-              <div class="menu-content">
-                <div class="menu-content-descrition">
-                  <h4 class="menu-title">Chocolate Lava Cake</h4>
-                  <div class="menu-desc-ingrendient">
-                    <p>Revisited</p>
-                    <div class="menu-prize">22€</div>
-                  </div>
-                </div>
-                <label class="select-menu">
-                  <input type="checkbox" />
-                  <span class="selected-menu"></span>
-                </label>
-              </div>
-            </div>
-          </li>
-          <li class="menu-3">
-            <div class="menu-desc-container">
-              <div class="menu-content">
-                <div class="menu-content-descrition">
-                  <h4 class="menu-title">Napolean</h4>
-                  <div class="menu-desc-ingrendient">
-                    <p>With blueberries and marzipan</p>
-                    <div class="menu-prize">23€</div>
-                  </div>
-                </div>
-                <label class="select-menu">
-                  <input type="checkbox" />
-                  <span class="selected-menu"></span>
-                </label>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="place-order">
-        <input type="button" value="Order" />
-      </section>
     </main>
     <footer>
       <nav>
-        <ul class="footer-nav-links">
-          <li>
-            <h3>ohmyfood</h3>
-          </li>
-          <li><i class="fa-solid fa-utensils"></i>Suggest a restaurant</li>
-          <li><i class="fa-solid fa-handshake-simple"></i>Become a partner</li>
-          <li>Legal</li>
-          <li><a href="mailto:dev_ephraim@yahoo.com">Contact</a></li>
-        </ul>
+        <div class="container">
+          <ul class="nav">
+            <li class="nav__item">
+              <h3 class="nav__logo">ohmyfood</h3>
+            </li>
+            <li class="nav__item">
+              <i class="fa-solid fa-utensils"></i>
+                Suggest a restaurant
+              </li>
+            <li class="nav__item">
+              <i class="fa-solid fa-handshake-simple"></i>
+                Become a partner
+              </li>
+            <li class="nav__item">
+              Legal
+            </li>
+            <li class="nav__item">
+              <a href="mailto:dev_ephraim@yahoo.com">Contact</a>
+            </li>
+          </ul>
+        <div>
       </nav>
     </footer>
   </body>
