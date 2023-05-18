@@ -548,11 +548,6 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
-  .column {
-    flex: 1 0 40%;
-  }
-
   .menu {
     .column {
       flex: 1 0 80%;
@@ -574,6 +569,10 @@ footer {
     background-color: transparent;
   }
 
+  .container {
+    max-width: 1200px;
+  }
+
   h5 {
     margin: 0;
     padding: 20px 0;
@@ -590,14 +589,10 @@ footer {
     }
   }
 
-  .row {
+  .menu {
     .column {
       flex: 1 0 20%;
     }
-  }
-  
-  .container {
-    max-width: 1200px;
   }
 
   .header {
