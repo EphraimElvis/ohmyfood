@@ -22,8 +22,9 @@ ul {
   li {
     padding: 0;
     list-style: none;
-    h4 {
+    .column-title {
       margin-bottom: 5px;
+      font-weight: 400;
     }
     hr {
       border: 2px solid #8ed9c8;
@@ -36,9 +37,72 @@ ul {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 800px;
   margin: auto;
   padding: 0 15px;
+}
+
+.title {
+  font-family: $logo-family;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.navbar__title {
+  margin: 0;
+  text-align: center;
+}
+
+.bg-grey {
+  background: #f6f6f6;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  margin: 0 0 20px 0;
+}
+
+.menu-title-icon {
+  color: $font-fade-color;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+
+  .heart-icon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .full-heart {
+    opacity: 0;
+  }
+
+  .empty-heart {
+    opacity: 1;
+  }
+  &:hover {
+    .empty-heart {
+      opacity: 0;
+    }
+    .full-heart {
+      opacity: 1;
+      background: -webkit-linear-gradient(#9356DC, #FF79DA);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.5s  ease-in 0.1s ;
+    }
+  }
 }
 
 //page layout
@@ -49,7 +113,7 @@ ul {
 }
 
 .column {
-  flex: 1 0 0%;
+  flex: 1 0 45%;
   padding: 10px;
 }
 
@@ -76,11 +140,11 @@ ul {
 
 //mixins
 //spage header styling
-@mixin h1-style ($font) {
-  font-family: $logo-family;
-  font-size: $font;
-  text-align: center;
-}
+// @mixin h1-style ($font) {
+//   font-family: $logo-family;
+//   font-size: $font;
+//   text-align: center;
+// }
 
 @mixin b-radius-top {
   border-top-left-radius: 20px;
@@ -97,86 +161,57 @@ ul {
   flex-direction: $direction;
   align-items: $align;
 }
-
 // Header styles
 header {
   .menu-barner {
     img {
       width: 100%;
-      max-height: 300px;
+      max-height: 350px;
       object-fit: cover;
     }
   }
 }
 
 .header {
-  background-color:rgba(230, 228, 234, 0.4);
-
-  .menu-logo {
+  a {
+    margin-right: 60px;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 22px;
+  }
+  .navbar {
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.2);
+    padding: 15px 0;
+    position: relative;
+  }
+  .header-location {
+    background:#eaeaea;
     @include d-flex(row, center);
-      justify-content: flex-start;
-  
-      a {
-        margin-right: 60px;
-        font-size: 1.5rem;
-      }
-  
-      h1 {
-        @include h1-style(1.5rem)
-      }
+    justify-content: center;
+    padding: 15px 0;
+    font-size: 1.3rem;
+    gap: 15px;
+    .header-sub-title {
+      margin: 0;
+    }
   }
 
-  .header-container {
-    padding-bottom: 60px;
-    @include d-flex(column, center);
-      h1 {
-        @include h1-style(1.5rem);
-        width: 100%;
-        margin-bottom: 6px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        box-shadow: 0px 11px 0px 0px rgba(97, 96, 99, 0.32);
-      }
-      .header-location {
-        @include d-flex(row, center);
-        justify-content: center;
-        width: 100%;
-        background-color:rgba(230, 228, 234, 1);
-        font-size: 1.3rem;
-        h5 {
-          padding: .9rem;
-          margin: 0
-        }
-      }
-      .header-desc {
-        @include d-flex(column, center);
-        width: 100%;
-        h2 {
-          padding-top: 20px;
-        }
-        p {
-          color: $font-fade-color;
-          text-align: center;
-          font-size: 1.1rem;
-          margin-bottom: 40px;
-        }
-      }
+  .header-title {
+    margin-top: 0;
   }
-  
+  p {
+    color: $font-fade-color;
+    text-align: center;
+    font-size: 1.1rem;
+  }
 }
 
 
 //Navbar styles
 .navbar-container {
   @include d-flex(column, stretch);
-  padding-bottom: 30px;
   i {
     color: #656169
-  }
-  h2 {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    margin: 0;
   }
   .navbar-menu {
     margin: 0;
@@ -214,34 +249,19 @@ header {
   }
 }
 
-.bg-color {
-  background-color: #eee;
-}
-
 .main-page {
   position: relative;
   top: -40px;
-  padding-top: 30px;
+  padding-top: 70px;
+  padding-bottom: 30px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   margin-bottom: -40px;
   .main-menu-title {
+    position: relative;
     @include d-flex(row, center);
     justify-content: space-between;
-    h1 {
-      @include h1-style(1.5rem);
-    }
-
-    i {
-      font-size: 1.5rem;
-    }
-
   }
-
-
-
-  
-
   ul {
     display: flex;
     flex-direction: column;
@@ -302,6 +322,10 @@ header {
         flex-direction: column;
       }
 
+      .menu-item__content {
+        font-weight: 100;
+      }
+
       .menu-item__content, .menu-item__heading {
         margin: 0;
         font-size: 15px;
@@ -344,14 +368,6 @@ header {
    .button {
     padding: 1rem 5rem;
    }
-  }
-}
-
-main {  
-  padding-bottom: 40px;
-  .main-content-title {
-    padding-top: 30px;
-    padding-bottom: 15px;
   }
 }
 
@@ -455,7 +471,7 @@ footer {
     cursor: pointer;
     .nav__item {
       .nav__logo {
-        @include h1-style(1.2rem);
+        font-family: $logo-family;
       }
       &:first-child {
         padding-bottom: 0;
@@ -535,10 +551,9 @@ footer {
 /* tablet */
 @media (min-width: 768px) {
 
-  .container {
-    max-width: 800px;
-    //background-color: #135c4b;
-  }
+  // .container {
+  //   max-width: 800px;
+  // }
 
   .button {
     padding: 1rem 3rem;
@@ -549,9 +564,9 @@ footer {
     flex-wrap: wrap;
   }
   .menu {
-    .column {
-      flex: 1 0 80%;
-    }
+    // .column {
+    //   flex: 1 0 80%;
+    // }
   }
   
 	footer {
@@ -563,14 +578,12 @@ footer {
 @media (min-width: 992px) {
 
   .main-page {
-    top: -20px;
-  }
-  .bg-color {
-    background-color: transparent;
-  }
-
-  .container {
-    max-width: 1200px;
+    top: -4px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-bottom: 0;
   }
 
   h5 {
@@ -590,19 +603,10 @@ footer {
   }
 
   .menu {
-    .column {
-      flex: 1 0 20%;
-    }
+    // .column {
+    //   flex: 1 0 20%;
+    // }
   }
 
-  .header {
-    .header-container {
-      h1 {
-        box-shadow: none;
-      }
-      .header-location {
-        background-color: transparent;
-      }
-    }
-  }
+  
 }
