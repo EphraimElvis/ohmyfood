@@ -564,9 +564,9 @@ footer {
     flex-wrap: wrap;
   }
   .menu {
-    // .column {
-    //   flex: 1 0 80%;
-    // }
+    .column {
+      flex: 1 0 80%;
+    }
   }
   
 	footer {

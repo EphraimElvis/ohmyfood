@@ -555,6 +555,9 @@ footer .nav .nav__item a {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .menu .column {
+    flex: 1 0 80%;
+  }
 }
 /* desktop */
 @media (min-width: 992px) {
