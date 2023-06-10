@@ -84,7 +84,7 @@ ul li hr {
 }
 .menu-title-icon:hover .full-heart {
   opacity: 1;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
